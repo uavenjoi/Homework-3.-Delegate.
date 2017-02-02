@@ -24,7 +24,7 @@ public partial class MainWindow : Gtk.Window
 		if (ToUpperCheckButton.Active)
 		{
 			if (TextLabel.Text.Length == 0)
-
+				//непонятно, если текста нет, зачем что то делать
 				TextLabel.Text = MainClass.StringOperations(TextField.Text, MainClass.ToUpperString);
 			else
 				TextLabel.Text = MainClass.StringOperations(TextLabel.Text, MainClass.ToUpperString);
@@ -32,6 +32,7 @@ public partial class MainWindow : Gtk.Window
 
 		if (TurnStringCheckButton.Active)
 		{
+			
 			if (TextLabel.Text.Length == 0)
 
 				TextLabel.Text = MainClass.StringOperations(TextField.Text, MainClass.TurnString);
